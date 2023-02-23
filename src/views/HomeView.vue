@@ -1,18 +1,44 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <main>
+    <Carousel />
+    <Highlights />
+    <OurStory />
+    <FeaturedSectionVue />
+    <Testimonials />
+    <Footer />
+  </main>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Carousel from '@/components/home/Carousel.vue';
+import Highlights from '@/components/home/Highlights.vue';
+import OurStory from '@/components/home/OurStory.vue';
+import FeaturedSectionVue from '@/components/global/FeaturedSection.vue';
+import Testimonials from '@/components/global/Testimonials.vue';
+import Footer from '@/components/global/Footer.vue';
 
 export default {
-  name: 'HomeView',
+  name: "Home",
   components: {
-    HelloWorld
+    Carousel,
+    Highlights,
+    OurStory,
+    FeaturedSectionVue,
+    Testimonials,
+    Footer
   }
 }
 </script>
+
+<style scoped>
+main {
+  /* border: 1px solid red; */
+  margin-top: 62px;
+}
+
+@media screen and (max-width: 920px) {
+  main {
+    margin-top: 58px;
+  }
+}
+</style>
