@@ -9,7 +9,7 @@
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum obcaecati recusandae dolorem veritatis commodi, aspernatur deserunt repellat nostrum vero reprehenderit accusantium pariatur minima veniam velit minus dolore fugiat, ab sequi? Nemo dolor facilis sit, exercitationem dolorem iure quos sunt accusamus.
                 </p>
 
-                <v-btn color="#ef264e" class="white--text" link href="/services" rounded>View All Services</v-btn>
+                <v-btn color="#ef264e" class="white--text mb-4" link href="/services" rounded>View All Services</v-btn>
             </v-container>
         </div>
     </div>

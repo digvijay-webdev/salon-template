@@ -3,7 +3,7 @@
         <v-carousel class="carousel" cycle delimiter-icon="mdi-minus" hide-delimiter-background show-arrows-on-hover>
             <v-carousel-item src="https://images.pexels.com/photos/1654834/pexels-photo-1654834.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
                 <div class="wrapper">
-                    <div class="wrapper-content">
+                    <div class="wrapper-content" data-aos="fade-up" data-aos-delay="600">
                         <h1>This is title</h1>
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis sit amet consequatur rerum, harum culpa sunt, facere ipsa, nam neque ad?
@@ -13,7 +13,7 @@
             </v-carousel-item>
             <v-carousel-item src="https://images.pexels.com/photos/3331486/pexels-photo-3331486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
                 <div class="wrapper">
-                    <div class="wrapper-content">
+                    <div class="wrapper-content" data-aos="fade-up" data-aos-delay="600">
                         <h1>This is title</h1>
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis sit amet consequatur rerum, harum culpa sunt, facere ipsa, nam neque ad?
@@ -23,7 +23,7 @@
             </v-carousel-item>
             <v-carousel-item src="https://images.pexels.com/photos/3738339/pexels-photo-3738339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
                 <div class="wrapper">
-                    <div class="wrapper-content">
+                    <div class="wrapper-content" data-aos="fade-up" data-aos-delay="600">
                         <h1>This is title</h1>
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis sit amet consequatur rerum, harum culpa sunt, facere ipsa, nam neque ad?
@@ -36,8 +36,11 @@
 </template>
 
 <script>
+import aosMixin from "@/mixins/aos.js";
+
 export default {
-    name: "Carousel"
+    name: "Carousel",
+    mixins: [aosMixin],
 }
 </script>
 

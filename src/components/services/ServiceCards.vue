@@ -3,7 +3,7 @@
         <v-container>
             <v-row>
                 <v-col v-for="service in services" :key="service.id" cols="12" sm="12" md="6" lg="4">
-                    <v-card class="card">
+                    <v-card data-aos="fade-up" data-aos-delay="200" class="card">
                         <v-img :src="service.src" height="250" class="align-end" gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)">
                             <v-card-title class="white--text">
                                 {{ service.name }}
@@ -28,8 +28,11 @@
 </template>
 
 <script>
+import aosMixin from "@/mixins/aos.js";
+
 export default {
     name: "ServiceCards",
+    mixins: [aosMixin],
     data() {
         return {
             services: [

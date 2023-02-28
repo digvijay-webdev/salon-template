@@ -4,7 +4,7 @@
             <h1 class="text-center" style="color: #34495e">Our Story</h1>
 
             <v-timeline :dense="$vuetify.breakpoint.smAndDown">
-                <v-timeline-item color="#FF1644">
+                <v-timeline-item data-aos="fade-up" data-aos-delay="300" color="#FF1644">
                     <v-card class="elevation-2">
                         <v-card-title class="text-h5">
                             Lorem ipsum
@@ -14,7 +14,7 @@
                         </v-card-text>
                     </v-card>
                 </v-timeline-item>
-                <v-timeline-item color="#FF1644">
+                <v-timeline-item data-aos="fade-up" data-aos-delay="300" color="#FF1644">
                     <v-card class="elevation-2">
                         <v-card-title class="text-h5">
                             Lorem ipsum
@@ -24,7 +24,7 @@
                         </v-card-text>
                     </v-card>
                 </v-timeline-item>
-                <v-timeline-item color="#FF1644">
+                <v-timeline-item data-aos="fade-up" data-aos-delay="300" color="#FF1644">
                     <v-card class="elevation-2">
                         <v-card-title class="text-h5">
                             Lorem ipsum
@@ -34,7 +34,7 @@
                         </v-card-text>
                     </v-card>
                 </v-timeline-item>
-                <v-timeline-item color="#FF1644">
+                <v-timeline-item data-aos="fade-up" data-aos-delay="300" color="#FF1644">
                     <v-card class="elevation-2">
                         <v-card-title class="text-h5">
                             Lorem ipsum
@@ -44,7 +44,7 @@
                         </v-card-text>
                     </v-card>
                 </v-timeline-item>
-                <v-timeline-item color="#FF1644">
+                <v-timeline-item data-aos="fade-up" data-aos-delay="300" color="#FF1644">
                     <v-card class="elevation-2">
                         <v-card-title class="text-h5">
                             Lorem ipsum
@@ -60,8 +60,11 @@
 </template>
 
 <script>
+import aosMixin from "@/mixins/aos.js";
+
 export default {
-    name: "ourStory"
+    name: "ourStory",
+    mixins: [aosMixin],
 }
 </script>
 
